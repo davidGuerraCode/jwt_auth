@@ -1,0 +1,14 @@
+nav.navigation-bar
+  span.logo
+    a(href="/") Ninja Smoothies
+  span.options  
+    ul
+      if user
+        li Welcome, #{user.email}
+        li 
+          a(href="/logout") Log out
+      else
+        li 
+          a(href="/login") Log in
+        li
+          a(href="/signup").btn-primary Signup

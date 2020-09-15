@@ -1,0 +1,19 @@
+extends vendor/layout/head.pug
+
+block content
+  form
+    .form-container
+      h1 Sign up
+      .form-field
+        label(for="email") Email
+        input#email(type="text" required placeholder="test@mail.com" autofocus name="email")
+        span.email.error
+      .form-field
+        label(for="password") Password
+        input#password(type="password" name="password" required)
+        span.password.error
+      button(type="submit") Sign up
+
+  script
+    include ./signup.js
+

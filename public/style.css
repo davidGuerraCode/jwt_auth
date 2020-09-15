@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+:root {
+  --main-color: #2f3437;
+  --teal-color: #4cb4ac;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: #2f3437;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  padding: 20px 15px;
+  margin-bottom: 10px;
+}
+
+.navigation-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.options ul {
+  display: flex;
+}
+
+.options li {
+  margin: 0 10px;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--teal-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.logo {
+  font-size: 2.3rem;
+}
+
+.smoothie {
+  display: flex;
+  height: 80%;
+  width: 500px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 40px;
+}
+
+.smoothie a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--teal-color);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.hero {
+  padding: 10px;
+}
+
+.hero p,
+.hero h2,
+.hero a {
+  margin: 5px;
+}
+
+form {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 5px 2px #cfc9cf;
+  padding: 20px 15px;
+  border-radius: 8px;
+}
+
+.form-container button {
+  margin: 10px 0;
+  background-color: var(--teal-color);
+  border-radius: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-container h1 {
+  margin-bottom: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.form-field {
+  margin: 10px 0;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ccc;
+  outline: none;
+}
+
+.email.error,
+.password.error {
+  display: block;
+  color: red;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+footer {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--teal-color);
+  height: 50px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
